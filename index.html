@@ -36,13 +36,13 @@
                       id="currentInput"
                       type="text"
                       class="form-control text-center"
-                      value="1"
+                      value="0"
                     />
                     <button id="phonePlusBtn" class="btn btn-default">
                       <i class="fas fa-plus"></i>
                     </button>
                   </div>
-                  <h5>$<span id="phone1Price">1219</span></h5>
+                  <h5>$<span id="phone1Price">00</span></h5>
                   <img
                     id="phoneRemoveBtn"
                     src="images/remove.png"
@@ -68,13 +68,13 @@
                       id="caseInput"
                       type="text"
                       class="form-control text-center"
-                      value="1"
+                      value="0"
                     />
                     <button id="casePlusBtn" class="btn btn-default">
                       <i class="fas fa-plus"></i>
                     </button>
                   </div>
-                  <h5>$<span id="case1Price">59</span></h5>
+                  <h5>$<span id="case1Price">00</span></h5>
                   <img
                     id="caseRemoveBtn"
                     src="images/remove.png"
@@ -88,15 +88,15 @@
             <div class="cart-item">
               <div class="row">
                 <div class="col-md-8">
-                  <h5>Subtotal:</h5>
-                  <h5>Tax:</h5>
-                  <h5>Total:</h5>
+                  <h5 id="subtotal">Subtotal:</h5>
+                  <h5 id="tax">Tax:</h5>
+                  <h5 class="col-md-0" id="total">Total:</h5>
                 </div>
 
                 <div class="col-md-4 status">
-                  <h5>$1,278</h5>
-                  <h5>$0</h5>
-                  <h5>$1,278</h5>
+                  <h5>$ <span id="inputSubtotal">00</span></h5>
+                  <h5>$ <span id="inputTax">00</span></h5>
+                  <h5 id="totalValue">$ <span id="inputTotal">00</span></h5>
                 </div>
               </div>
             </div>
