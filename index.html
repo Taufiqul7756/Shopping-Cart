@@ -105,7 +105,7 @@
     </section>
 
     <script>
-      //phone section
+      //phone section minus
       const phoneMinusBtn = document.getElementById("phoneMinusBtn");
       phoneMinusBtn.addEventListener("click", function () {
         let currentValue = document.getElementById("currentInput").value;
@@ -113,7 +113,7 @@
         //const inputSection = document.getElementById('currentInput')
 
         const currentNumber01 = parseFloat(currentNumber - 1);
-        console.log(currentNumber01);
+        //console.log(currentNumber01);
         //console.log(document.getElementById('currentInput'));
 
         document.getElementById("currentInput").value = currentNumber01;
@@ -130,13 +130,20 @@
         //const inputSection = document.getElementById('currentInput')
 
         const currentNumber01 = parseFloat(currentNumber + 1);
-        console.log(currentNumber01);
+        //console.log(currentNumber01);
         //console.log(document.getElementById('currentInput'));
 
         document.getElementById("currentInput").value = currentNumber01;
         document.getElementById("phone1Price").innerText =
           currentNumber01 * 1219;
         //console.log(document.getElementById("phone1Price"));
+      });
+
+      //remove button
+      const removeBtn = document.getElementById("RemoveBtn");
+      removeBtn.addEventListener("click", function () {
+        document.getElementById("currentInput").value = 0;
+        document.getElementById("phone1Price").innerText = "0";
       });
     </script>
   </body>
